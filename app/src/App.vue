@@ -195,10 +195,10 @@ export default {
       )(
         // Trick to reset/clear native browser form validation state
         (this.show = false)
-      );
-      this.$nextTick(() => {
-        this.show = true;
-      });
+      ),
+        this.$nextTick(() => {
+          this.show = true;
+        });
     }
   }
 };
